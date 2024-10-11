@@ -1,6 +1,6 @@
 import React from "react";
 import HeroPage from "./views/HeroPage";
-import HeroSection from "./components/HeroSection";
+// import HeroSection from "./components/HeroSection";
 
 const App: React.FC = () => {
   return (

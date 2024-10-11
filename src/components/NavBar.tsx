@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
     <nav className="flex justify-between items-center py-4 px-8 bg-white mt-2">
       {/* Logo */}
       <div className="">
-        <img src={Logo} alt="" className="w-40 cursor-pointer" />
+        <img src={Logo} alt="" className="lg:w-40 cursor-pointer md:w-44" />
       </div>
 
       {/* Toggle Button for Mobile */}
@@ -25,9 +25,9 @@ const NavBar: React.FC = () => {
         {/* Hamburger Icon or Close Icon */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl text-black focus:outline-none"
+          className="text-3xl text-white focus:outline-none bg-black rounded-lg p-3 "
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {isOpen ? <FiX /> : <FiMenu className="font-[700] text-[30px]" />}
         </button>
       </div>
 

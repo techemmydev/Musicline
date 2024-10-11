@@ -15,16 +15,16 @@ const logos = [
 const CompanyLogos = () => {
   return (
     <div className="w-full p-10   mt-4 lg:p-32 ">
-      <h1 className="text-center font-PlusJakartaSans font-[600] mb-9">
+      <h1 className="text-center font-PlusJakartaSans font-[600] mb-9 text-[25px]">
         Supported by:
       </h1>
       <div className="w-full flex items-center justify-center  h-5/6">
         <div className="  lg:flex lg:gap-20 ">
           {logos.map((logo, index) => (
-            <div key={index} className="mb-7 lg:mb-0">
+            <div key={index} className="mb-9 lg:mb-0">
               {" "}
               {/* Adjust margin for mobile */}
-              <img src={logo.src} alt={logo.alt} className="w-40" />{" "}
+              <img src={logo.src} alt={logo.alt} className="w-48" />{" "}
               {/* Set a width for consistency */}
             </div>
           ))}

@@ -1,11 +1,12 @@
 import React from "react";
 import lofo from "../assets/img/girlteach.jpg";
-import { IoCheckmarkCircle } from "react-icons/io5";
+import { FaCheckCircle } from "react-icons/fa";
 import Button from "./Button";
+import CountUp from "react-countup";
 
 const GrowSection: React.FC = () => {
   return (
-    <div className="p-8 flex flex-col lg:flex-row  justify-center ">
+    <div className="p-8 flex flex-col lg:flex-row  justify-center lg:p-20">
       {/* Left Section (Text and Image) */}
       <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:mr-8 ">
         {/* Heading */}
@@ -26,8 +27,8 @@ const GrowSection: React.FC = () => {
 
       {/* Right Section (List, Button, Stats) */}
       {/* Right Section (List, Button, Stats) */}
-      <div className="w-full lg:w-1/2 flex flex-col items-start lg:p-24">
-        <p className="text-gray-600 leading-relaxed mb-4 font-PlusJakartaSans">
+      <div className="w-full lg:w-2/3 flex flex-col items-start lg:p-20">
+        <p className="text-gray-600 leading-relaxed mb-4 font-serif">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip.
@@ -37,19 +38,19 @@ const GrowSection: React.FC = () => {
         <ul className="space-y-4 mb-8 text-gray-600">
           <li className="flex items-center text-lg font-PlusJakartaSans ">
             <span className="text-gold-500 text-xl mr-2 ">
-              <IoCheckmarkCircle className="fill-black" />
+              <FaCheckCircle className="fill-black" />
             </span>{" "}
             Quality services and support all time
           </li>
           <li className="flex items-center text-lg">
             <span className="text-gold-500 text-xl mr-2">
-              <IoCheckmarkCircle className="fill-black" />
+              <FaCheckCircle className="fill-black" />
             </span>{" "}
             Expert team member
           </li>
           <li className="flex items-center text-lg">
             <span className="text-gold-500 text-xl mr-2">
-              <IoCheckmarkCircle className="fill-black" />
+              <FaCheckCircle className="fill-black" />
             </span>{" "}
             Lifetime online support
           </li>
@@ -60,18 +61,30 @@ const GrowSection: React.FC = () => {
           Appointment
         </Button>
         {/* Stats */}
-        <div className="flex justify-between w-full text-center text-lg font-bold flex-col gap-9 lg:flex-row">
+        <div className="flex justify-between w-full text-center text-lg font-bold flex-col gap-9 lg:flex-row lg:mt-7">
           <div>
-            <span className="block text-4xl  text-icon-color">250+</span>
-            <span className="text-gray-600">Project Done</span>
+            <span className="block text-4xl text-icon-color mb-2 font-serif font-bold">
+              <CountUp end={250} duration={2} suffix="+" />
+            </span>
+            <span className="font-light font-PlusJakartaSans lg:text-[15px] text-[#6E6E6E]">
+              Project Done
+            </span>
           </div>
           <div>
-            <span className="block text-4xl  text-icon-color">640+</span>
-            <span className="text-gray-600">Satisfied Client</span>
+            <span className="block text-4xl text-icon-color mb-2 font-serif ">
+              <CountUp end={640} duration={2} suffix="+" />
+            </span>
+            <span className="font-light font-PlusJakartaSans lg:text-[15px] text-[#6E6E6E]">
+              Satisfied Client
+            </span>
           </div>
           <div>
-            <span className="block text-4xl  text-icon-color">800+</span>
-            <span className="text-gray-600">User Active</span>
+            <span className="block text-4xl text-icon-color mb-2 font-serif">
+              <CountUp end={800} duration={2} suffix="+" />
+            </span>
+            <span className="font-light font-PlusJakartaSans lg:text-[15px] text-[#6E6E6E]">
+              User Active
+            </span>
           </div>
         </div>
       </div>

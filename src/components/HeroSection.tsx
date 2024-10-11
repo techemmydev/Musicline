@@ -4,7 +4,7 @@ import lofo from "../assets/img/teach.webp";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className=" bg-slate-900 flex items-center justify-center  flex-col-reverse lg:flex-row lg:gap-20 lg:justify-start">
+    <div className="  flex items-center justify-center  flex-col-reverse lg:flex-row lg:gap-20 lg:justify-start">
       <div className=" relative bg-black p-10 lg:p-0">
         {/* Image */}
         <img
@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
         <p className="text-sm uppercase text-gold-500 font-[500] text-icon-color font-PlusJakartaSans ">
           Welcome to Musicine
         </p>
-        <h1 className="mt-4 text-[30px] font-serif font-extrabold  text-black   text-center lg:text-[60px] ">
+        <h1 className="mt-4 text-[30px] font-OpenSans font-extrabold  text-black   text-center lg:text-[60px] ">
           Learning Music With Easy Way
         </h1>
         <p className="mt-4 text-black leading-relaxed font-PlusJakartaSans text-[12px]">
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
               size={70}
               className="text-gold-500 fill-black lg:text-[100px]"
             />
-            <span className="font-serif text-black font-[400] text-[12px] lg:text-[20px]">
+            <span className="font-OpenSans text-black font-[400] text-[12px] lg:text-[20px]">
               How it Works
             </span>
           </div>

@@ -4,6 +4,7 @@ import saxophone1 from "../assets/img/nursery-school-children-with-man-teacher-s
 import saxophone2 from "../assets/img/adorable-schoolgirl-and-her-music-teacher-playing-2021-12-16-00-26-04-utc.jpg";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 // Dummy Data for Numbers
 const numbers = [
@@ -107,6 +108,11 @@ const GradePrograms: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="text-center mt-12">
+          <Button className="hover:bg-black text-white uppercase bg-icon-color  mb-8  w-full lg:w-72">
+            See All Programs
+          </Button>
         </div>
       </div>
     </>

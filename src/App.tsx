@@ -11,6 +11,7 @@ import InstructorsSection from "./components/InstructorsSection";
 import Contact from "./components/Contact";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
+import FAQAccordion from "./components/FAQAccordion";
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <WhyChooseUs />
         <StatsSection />
         <InstructorsSection />
+        <FAQAccordion />
         <Contact />
         <CallToAction />
         <Footer />

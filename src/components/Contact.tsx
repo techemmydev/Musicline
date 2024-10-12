@@ -18,7 +18,7 @@ const features = [
 ];
 const Contact: React.FC = () => {
   return (
-    <div className="p-8 flex flex-col lg:flex-row  justify-center lg:p-20 bg-[#F8F8F8]">
+    <div className="p-8 flex flex-col lg:flex-row  justify-center lg:p-20 bg-white">
       {/* Left Section (Text and Image) */}
       <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:mr-8 ">
         {/* Heading */}

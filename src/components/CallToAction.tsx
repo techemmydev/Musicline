@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const CallToAction = () => {
   return (
-    <div className="relative bg-orange-500 p-8 flex flex-col items-center justify-center lg:flex-row lg:p-20 ">
+    <div className="relative  p-8 flex flex-col items-center justify-center lg:flex-row lg:p-20 ">
       {/* Image and Overlay Container */}
       <div className="relative w-full lg:w-full h-[400px] ">
         {/* Image */}

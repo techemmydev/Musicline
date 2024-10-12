@@ -5,7 +5,7 @@ import footerlogo from "../assets/img/Logo-Musicine-2.png";
 const Footer = () => {
   return (
     <footer className="bg-[#121212] text-white p-8 lg:p-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 text-center lg:text-left ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 text-center lg:text-center ">
         {/* Logo and Description */}
         <div className="flex flex-col items-center lg:items-start p-5">
           <img src={footerlogo} alt="flogo" />
@@ -50,7 +50,7 @@ const Footer = () => {
 
         {/* Contact */}
         <div className="flex flex-col  ">
-          <h3 className="text-xl font-bold mb-4 ">Contact</h3>
+          <h3 className="text-xl font-bold mb-4 lg:text-left">Contact</h3>
           <ul className="text-gray-400 font-PlusJakartaSans">
             <li className="mb-2 flex items-center flex-col gap-4 lg:flex-row">
               <FaPhoneAlt className="mr-2 text-[#B38B37] text-[20px]" /> (205)
@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center text-gray-600 mt-12 flex items-start justify-between">
-        <p>Copyright © 2022 Tokomoo</p>
+        <p>Copyright © 2024 Tokomoo</p>
         <div className="flex justify-center space-x-4 ">
           <a href="#" className="text-gray-400 hover:text-white">
             Help & Support

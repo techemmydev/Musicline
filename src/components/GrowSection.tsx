@@ -27,28 +27,28 @@ const GrowSection: React.FC = () => {
 
       {/* Right Section (List, Button, Stats) */}
       {/* Right Section (List, Button, Stats) */}
-      <div className="w-full lg:w-2/3 flex flex-col items-start lg:p-20">
-        <p className="text-gray-600 leading-relaxed mb-4 font-serif">
+      <div className="w-full lg:w-2/3 flex flex-col items-start lg:p-16">
+        <p className="text-gray-600 leading-8 mb-4 font-PlusJakartaSans text-center lg:text-justify ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip.
         </p>
 
         {/* List of services */}
-        <ul className="space-y-4 mb-8 text-gray-600">
-          <li className="flex items-center text-lg font-PlusJakartaSans ">
-            <span className="text-gold-500 text-xl mr-2 ">
+        <ul className="space-y-4 mb-8 lg:mt-9 text-gray-600 font-PlusJakartaSans ">
+          <li className="flex items-center   lg:text-[16px]">
+            <span className="text-gold-500 text-xl mr-2  ">
               <FaCheckCircle className="fill-black" />
             </span>{" "}
             Quality services and support all time
           </li>
-          <li className="flex items-center text-lg">
+          <li className="flex items-center  lg:text-[16px]">
             <span className="text-gold-500 text-xl mr-2">
               <FaCheckCircle className="fill-black" />
             </span>{" "}
             Expert team member
           </li>
-          <li className="flex items-center text-lg">
+          <li className="flex items-center  lg:text-[16px]">
             <span className="text-gold-500 text-xl mr-2">
               <FaCheckCircle className="fill-black" />
             </span>{" "}

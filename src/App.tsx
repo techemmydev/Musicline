@@ -3,6 +3,8 @@ import HeroPage from "./views/HeroPage";
 import HeroSection from "./components/HeroSection";
 import CompanyLogos from "./components/CompanyLogos";
 import GrowSection from "./components/GrowSection";
+import MusicClassSection from "./components/Music";
+import GradePrograms from "./components/GradePrograms";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +14,8 @@ const App: React.FC = () => {
         <HeroSection />
         <CompanyLogos />
         <GrowSection />
+        <MusicClassSection />
+        <GradePrograms />
       </div>
     </div>
   );

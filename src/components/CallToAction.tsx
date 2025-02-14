@@ -31,7 +31,7 @@ const CallToAction = () => {
             <input
               type="email"
               placeholder="Email"
-              className="p-3 border rounded-lg focus:outline-none w-full lg:w-full" // Change lg:w-96 to increase width
+              className="p-3 border rounded-lg focus:outline-hidden w-full lg:w-full" // Change lg:w-96 to increase width
             />
 
             {/* Button */}

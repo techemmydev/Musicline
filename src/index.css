@@ -1,13 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sixtyfour+Convergence&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sixtyfour+Convergence&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --text-*: initial;
+  --text-xs: 12px, 16px;
+  --text-sm: 14px, 20px;
+  --text-base: 16px, 19.5px;
+  --text-lg: 18px, 21.94px;
+  --text-xl: 20px, 24.38px;
+  --text-2xl: 20px, 29.26px;
+  --text-3xl: 25px, 50px;
+  --text-4xl: 48px, 58px;
+  --text-8xl: 96px, 106px;
+
+  --font-Plus-jakarta-sans: Plus Jakarta Sans, sans-serif;
+  --font-serif: Merriweather, serif;
+  --font-Open-sans: Open Sans, sans-serif;
+
+  --color-primary: #eceeff;
+  --color-coral-red: #abb8c4;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
+  --color-white-400: rgba(255, 255, 255, 0.8);
+  --color-icon-color: #b38b37;
+
+  --shadow-custom-1: 0px 8px 12px 0px #ffffff0a inset;
+  --shadow-custom-2: 0px 24px 64px -16px #0000003d;
+  --shadow-custom-3: 16px 24px 64px -24px #ffffff0a inset;
+  --shadow-checkbox-1: 0px 1px 3px 0px #0000000d;
+  --shadow-checkbox-2: 0px 1px 2px -1px #0000000d;
+  --shadow-success-shadow: 0px 4px 26px -4px #4ac97e29;
+  --shadow-box1-shadow: 0px 10px 45px -3px #4ac97e4d;
+
+  --background-image-background-checkbox: linear-gradient(
+    45deg,
+    #4d62e5 0%,
+    #87ddee 45.31%,
+    #b6f09c 100%
+  );
+  --background-image-boxdash: linear-gradient(
+    117.58deg,
+    rgba(215, 237, 237, 0.16) -47.79%,
+    rgba(204, 235, 235, 0) 100%
+  );
+
+  --background-color-custom-blue: #131619;
+
+  --breakpoint-wide: 1440px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 * {
   margin: 0;

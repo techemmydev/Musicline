@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl text-white focus:outline-none bg-black rounded-lg p-3 z-50"
+          className="text-3xl text-white focus:outline-hidden bg-black rounded-lg p-3 z-50"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
